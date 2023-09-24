@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo 13</title>
+  <link rel="stylesheet" href="./libs/bootstrap.min.css">
+  <style>
+    .menu {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 9999;
+    }
+
+    .carousel-item {
+      height: 450px;
+    }
+
+    .card-img-overlay {
+      background-color: rgba(0, 0, 0, .5);
+    }
+
+    .col-4 {
+      margin-top: 33px;
+    }
+
+    /* .sessoes section {
+      height: 100vh;
+      padding-top: 120px;
+    } */
+    section {
+      margin-top: 40px;
+    }
+
+    .historia {
+      background-color: rgba(0, 0, 0, .5);
+      height: 450px;
+      color: #fff;
+    }
+
+    footer {
+      padding: 30px;
+    }
+
+    .cards div {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div data-bs-spy="scroll" data-bs-target="#menu">
+      <div class="row menu">
+        <div class="col-sm">
+          <div class="navbar navbar-expand-lg">
+            <h1>Título do site</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="nav navbar-nav nav-pills">
+                <li class="nav-item"><a class="nav-link text-center active" href="#">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="#catalogo">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="#historia">Historia</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="#contato">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <main class="col">
+          <div id="carousel-exemple" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100 h-100"
+                  src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_1280.jpg" />
+                <div class="carousel-caption">
+                  <h2>Foto praia 1</h2>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100 h-100"
+                  src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" />
+                <div class="carousel-caption">
+                  <h2>Foto praia 2</h2>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100 h-100"
+                  src="https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg" />
+                <div class="carousel-caption">
+                  <h2>Foto praia 3</h2>
+                </div>
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100 h-100"
+                  src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg" />
+                <div class="carousel-caption">
+                  <h2>Foto praia 4</h2>
+                </div>
+              </div>
+            </div>
+            <button data-bs-target="#carousel-exemple" data-bs-slide="prev" class="carousel-control-prev" type="button">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemple" data-bs-slide="next" class="carousel-control-next" type="button">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button class="active" type="button" data-bs-target="#carousel-exemple" data-bs-slide-to="0"></button>
+              <button type="button" data-bs-target="#carousel-exemple" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carousel-exemple" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carousel-exemple" data-bs-slide-to="3"></button>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!--Cards-->
+      <div class="sessoes">
+        <section id="catalogo">
+          <div class="row cards">
+            <div class="col-sm-4">
+              <div class="card text-bg-dark">
+                <div class="card-header">
+                  <h2>Produto</h2>
+                </div>
+                <img src="https://i.pinimg.com/236x/a3/8b/30/a38b3004922cfb3964e25474c2509e3d.jpg" />
+                <div class="card-body">
+                  <strong>R$219,00</strong>
+                  <p>3x 73,00 sem juros</p>
+                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam nesciunt laborum in.</h5>
+                  <a class="btn btn-link btn-sm" href="#">Adicionar ao carrinho</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-bg-dark">
+                <img src="https://i.pinimg.com/564x/32/ae/72/32ae726015ba88f9a7fe11db26cdaa68.jpg" />
+                <div class="card-img-overlay">
+                  <h1>Ilha de Patimus</h1>
+                  <strong>R$219,00</strong>
+                  <p>3x 73,00 sem juros</p>
+                  <h5>Venha passar um dia nessa ilha maravilhosa e se encantar com as belas prais
+                    com águas cristalinas.
+                  </h5>
+                  <a class="btn btn-link btn-sm" href="#">Adicionar ao carrinho</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <article class="card">
+                <header class="card-header">
+                  <h2>Desenvolvimento web</h2>
+                </header>
+                <img src="https://via.placeholder.com/320x250" />
+                <div class="card-body">
+                  <strong>Variações dos cards do bootstrap</strong>
+                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam nesciunt laborum in.</h5>
+                  <a class="btn btn-link btn-sm" href="#">Ler mais</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Produto</h2>
+                </div>
+                <img src="https://via.placeholder.com/320x250" />
+                <div class="card-body">
+                  <strong>R$219,00</strong>
+                  <p>3x 73,00 sem juros</p>
+                  <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam nesciunt laborum in.</h5>
+                  <a class="btn btn-link btn-sm" href="#">Adicionar ao carrinho</a>
+                </div>
+                <footer class="card-footer">
+                  <p>Postado em
+                    <time>23 de set 2023 às 21:07 horas</time>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="historia">
+          <div class="row">
+            <div class="col-sm-8">
+              <img src="https://cdn.pixabay.com/photo/2018/04/13/19/10/village-3317294_1280.jpg" class="w-100" />
+            </div>
+            <div class="col-sm-4">
+              <h2>História</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid et ipsam aut nisi dolorem omnis amet,
+                doloribus veniam facilis alias sint, odit cupiditate molestias animi dolor est laboriosam! Laborum,
+                fugiat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta commodi architecto delectus et
+                reiciendis, dicta cum quaerat nihil animi rem voluptate, quasi in vero totam illo veniam molestiae sunt?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="contato">
+          <div class="row">
+            <div class="col-sm-8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3015965014138!2d-40.074542230394584!3d-18.91145086782412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5fdc2a4a73e5d%3A0x93744cf63521934d!2sR.%20Jana%C3%ADna%20Sessa%2C%20197%20-%20Jaguare%2C%20Jaguar%C3%A9%20-%20ES%2C%2029950-000!5e0!3m2!1spt-BR!2sbr!4v1695508779506!5m2!1spt-BR!2sbr"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="w-100 h-100"></iframe>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="display-4" style="border-bottom: 1px solid black;">Contato</h2>
+              <form>
+                <label class="form-label" for="nome">Nome</label>
+                <input class="form-control" id="nome" type="text" placeholder="Seu nome completo">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" id="email" type="text" placeholder="Email principal">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" class="form-control"></textarea>
+                <div class="form-check form-switch">
+                  <label for="aceito-termos" class="form-check-label">Li e aceito os termos do site.</label>
+                  <input type="checkbox" class="form-check-input" id="aceito-termos">
+                </div>
+                <button class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center text-uppercase">
+        <footer>
+          <span>&copy;copyright todos os direitos reservados por
+            <b class="fs-6"><a href="https://github.com/gbri-dev/exercicio_bootstrap">gbri-dev</a></b></span>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./libs/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
